@@ -72,7 +72,6 @@ In this project, a 6-bit barrel shifter is implemented using Verilog HDL. The sh
 ![Waveform](assets/waveforms.png)
 
 
----
 ## RTL Schematic
 ![RTL Schematic](assets/schematic.png)
 

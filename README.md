@@ -69,10 +69,12 @@ The working of the 6-bit barrel shifter involves cascaded multiplexer stages tha
 In this project, a 6-bit barrel shifter is implemented using Verilog HDL. The shifter is capable of shifting a 6-bit data word left or right by 0 to 5 positions in a single combinational operation. The direction is controlled by a single input line, and vacated bit positions are always filled with zeros (logical shift). The testbench verified the shifter against all shift amounts (0 to 5) for both left and right directions using the input `101010` (hex: 2A). All output values matched the expected results. The following waveform was observed after simulation:
 
 ### Waveform
-<img width="1097" height="627" alt="waveforms" src="https://github.com/user-attachments/assets/be065629-4164-49e7-a95f-92eb8f30145f" />
+![Waveform](assets/waveforms.png)
 
 
 ---
+## RTL Schematic
+![RTL Schematic](assets/schematic.png)
 
 ## Conclusion
 In conclusion, the project successfully designed a 6-bit barrel shifter using a 3-stage cascaded multiplexer architecture in Verilog. The shifter efficiently performs logical left and right shifts for all shift amounts from 0 to 5, with the direction controlled by a single input line. The design is entirely combinational, requiring no clock signal, which makes it fast and suitable for use inside ALUs and other time-critical digital systems. The 6-bit barrel shifter holds potential applications in microprocessor datapaths, digital signal processing, and any system requiring fast bit manipulation. The staged mux architecture is easily scalable to wider data widths by adding further stages.
